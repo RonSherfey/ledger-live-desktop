@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  target-branch: master
+  labels:
+  - dependabot
+  - dependencies
+  ignore:
+  - dependency-name: "@babel/plugin-transform-modules-commonjs"
+    versions:
+    - 7.12.13
+  - dependency-name: "@ledgerhq/live-common"
+    versions:
+    - 18.5.4
+  - dependency-name: eslint
+    versions:
+    - 7.20.0
